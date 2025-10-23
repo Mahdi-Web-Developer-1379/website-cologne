@@ -1,0 +1,26 @@
+
+.contents {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 120px;
+  text-align: right;
+  padding: 0 15px 5rem;
+  color: black;
+  direction: rtl;
+  font-family: shabnam;
+}
+
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
+
+
+@media (max-width: 1024px) {
+  .main {
+    flex-direction: column-reverse;
+  }
+ 
+}
+

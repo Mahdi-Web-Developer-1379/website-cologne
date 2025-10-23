@@ -1,0 +1,149 @@
+.tabel_container {
+  width: 100%;
+  overflow-x: auto;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+.table th,
+.table td {
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 14px;
+}
+
+.table thead {
+  background: #f9f9f9;
+}
+
+.table tr:hover {
+  background: #fafafa;
+}
+
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.product img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.product a {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+
+.counter div {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.counter span,
+.counter p {
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.counter span:hover {
+  background: #711d1c;
+  color: #fff;
+}
+
+.counter p {
+  margin: 0;
+  cursor: default;
+}
+
+
+.delete_icon {
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+  transition: 0.2s;
+}
+
+.delete_icon:hover {
+  color: #c00;
+}
+
+
+.tabel_container section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1.5rem;
+}
+
+.tabel_container section input {
+  min-width: 220px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.update_btn,
+.set_off_btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.update_btn {
+  background: #f7f7f7;
+}
+
+.update_btn:hover {
+  background: #e0e0e0;
+}
+
+.set_off_btn {
+  background: rgb(0, 137, 121);
+  color: #fff;
+}
+
+.set_off_btn:hover {
+  background: rgb(113, 29, 28);
+}
+
+
+@media (max-width: 768px) {
+  .tabel_container section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tabel_container section input,
+  .update_btn,
+  .set_off_btn {
+    width: 100%;
+  }
+}

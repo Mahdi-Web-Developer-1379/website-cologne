@@ -1,0 +1,284 @@
+@font-face {
+  font-family: shabnam;
+  src: url("/fonts/shabnam/Shabnam-Medium.woff");
+}
+
+@font-face {
+  font-family: shabnam-Bold;
+  src: url("/fonts/shabnam/Shabnam-Bold.woff");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: shabnam;
+}
+
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #fff !important;
+  border-radius: 6px !important;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #711d1c !important;
+}
+
+html,
+body {
+  max-width: 100vw;
+}
+
+body {
+  background: white;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.container {
+  max-width: 1222px;
+  margin: 0 auto;
+}
+
+/* swiper */
+.mySwiper .swiper-button-prev:after,
+.mySwiper .swiper-button-next:after {
+  font-size: 26px !important;
+  color: #070707 !important;
+  font-weight: 1000;
+  
+
+}
+
+.home-slider .swiper-button-prev:after,
+.home-slider .swiper-button-next:after {
+  font-size: 14px !important;
+  color: #070707 !important;
+  font-weight: 1000;
+
+}
+
+.home-slider img {
+  position: relative;
+  right: 1px;
+}
+
+.gallery-slider .swiper-button-prev:after,
+.gallery-slider .swiper-button-next:after {
+  font-size: 26px !important;
+  color: #070707 !important;
+  font-weight: 1000;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 75vh;
+  object-fit: 100% 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  .swiper-slide img{
+  height: 55vh;
+
+  }
+}
+
+
+.gallery-slider-2 {
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.gallery-slider-2 .swiper-slide {
+  opacity: 0.4;
+}
+
+.gallery-slider-2 .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.articles_slider .swiper-button-prev,
+.articles_slider .swiper-button-next {
+  opacity: 0;
+}
+
+.articles_slider:hover .swiper-button-prev,
+.articles_slider:hover .swiper-button-next {
+  opacity: 1;
+  transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+
+
+
+.swal-modal {
+  background: #fff !important;
+  border-radius: 20px !important;
+  border: 2px solid #711d1c !important;
+  padding: 25px !important;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15) !important;
+  animation: fadeInScale 0.3s ease-out;
+}
+
+
+@keyframes fadeInScale {
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+.swal-title {
+  color: #711d1c !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  margin-bottom: 15px !important;
+  text-align: center !important;
+}
+
+
+.swal-text {
+  color: #333 !important;
+  font-size: 15px !important;
+  text-align: center !important;
+  line-height: 1.5 !important;
+}
+
+
+.swal-content__input,
+.swal-content__textarea {
+  border: 1px solid #ccc !important;
+  border-radius: 10px !important;
+  padding: 8px 12px !important;
+  font-size: 14px !important;
+  width: 100% !important;
+  color: #000 !important;
+  transition: border-color 0.2s ease;
+}
+
+.swal-content__input:focus,
+.swal-content__textarea:focus {
+  border-color: #711d1c !important;
+  outline: none !important;
+}
+
+
+.swal-footer {
+  text-align: center !important;
+  margin-top: 20px !important;
+}
+
+.swal-button {
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  padding: 10px 18px !important;
+  font-size: 14px !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+
+.swal-button--confirm {
+  background: #711d1c !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.swal-button--confirm:hover {
+  background: #5a1413 !important;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(113, 29, 28, 0.4);
+}
+
+
+.swal-button--cancel {
+  background: #f1f1f1 !important;
+  color: #333 !important;
+  border: 1px solid #ddd !important;
+}
+
+.swal-button--cancel:hover {
+  background: #e1e1e1 !important;
+}
+
+
+
+/* charts */
+.yAxis .recharts-cartesian-axis-tick-value {
+  text-anchor: start !important;
+}
+
+.css-13cymwt-control,
+.css-16xfy0z-control {
+  height: 51px;
+  margin-top: 0.3rem;
+}
+
+/* leaflet */
+
+.leaflet-control-attribution {
+  display: none !important;
+}
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+.leaflet-default-icon-path {
+  background-image: url(https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png) !important;
+}
+
+.leaflet-top {
+  right: 12px !important;
+  bottom: 12px !important;
+  left: unset !important;
+  top: unset !important;
+}
+
+
+
+
+.Toastify__toast {
+  font-family: Vazirmatn, sans-serif;
+  direction: rtl;
+}
+.Toastify__toast--success {
+  background-color: #4caf50;
+}
+.Toastify__toast--error {
+  background-color: #f44336;
+}

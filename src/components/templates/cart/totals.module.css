@@ -1,0 +1,135 @@
+
+.totals {
+  width: 45%;
+  color: black;
+  text-align: right;
+  padding: 2rem;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.totals_title {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding-inline-start: 6px;
+}
+
+.subtotal {
+  flex-direction: row-reverse;
+  padding-bottom: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.motor {
+  text-align: left;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.address {
+  direction: rtl;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address span {
+  color: gray;
+  width: 150px;
+  text-align: left !important;
+}
+
+.change_address {
+  text-align: left;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.total {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+}
+
+.total p:nth-child(2) {
+  color: rgb(52, 24, 14);
+  font-size: 22px;
+  direction: rtl;
+}
+
+.checkout_btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 1.5rem;
+  font-size: 15px;
+  color: #fff;
+  background-color: rgb(0, 137, 121);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.checkout_btn:hover {
+  background: rgb(113, 29, 28);
+}
+
+.address_details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.address_details button {
+  color: #333;
+  background-color: #f7f7f7;
+  padding: 12px 20px;
+  font-size: 13px;
+  line-height: 18px;
+  width: 30%;
+  border: 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.address_details button:hover {
+  background: #efefef;
+}
+
+
+@media (max-width: 1006px) {
+  .totals {
+    width: 70%;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .address,
+  .subtotal,
+  .total {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .address_details button {
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .totals {
+    width: 100%;
+    
+  }
+}

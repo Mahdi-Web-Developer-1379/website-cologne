@@ -1,0 +1,142 @@
+
+
+.adminticket {
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 0px 10px 10px;
+  border: #00714f 3px solid;
+  margin-bottom: 15px;
+  margin-right: auto;
+}
+
+.userTicket img,
+.adminticket img {
+  width: 80px;
+  border-radius: 100px;
+}
+
+.ticket_main {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.ticket_main div {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.adminticket .ticket_text {
+  background-color: #00714f;
+  color: white;
+}
+
+.ticket_text {
+  background-color: white;
+  color: black;
+  margin: 1rem 1rem;
+  border-radius: 5px;
+
+  padding: 0.5rem;
+}
+.ticket_text p{
+  margin: 12px 0;
+}
+.empty {
+  width: 100%;
+  border-radius: 5px;
+  border-radius: 5px;
+  background-color: #00714f21;
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px 0;
+  color: #00714f;
+}
+
+.ticket_main div div span {
+  font-size: 14px;
+  width: 100%;
+  color: gray;
+}
+
+.ticket_main div div {
+  justify-content: right;
+  gap: 5px;
+  flex-direction: column;
+}
+
+
+
+.order_items {
+  margin-top: 1rem;
+  border-top: 1px solid #ccc;
+  padding-top: 0.5rem;
+}
+
+.order_items h4 {
+  margin-bottom: 0.5rem;
+  color: #00714f;
+  font-weight: 600;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.item div p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.item div span {
+  font-size: 14px;
+  color: gray;
+}
+
+
+
+
+@media (max-width: 480px) {
+.adminticket{
+  padding: 0;
+  font-size: 13px;
+}
+
+.adminticket img {
+width: 50px;
+}
+.item img {
+width: 30px;
+height: 30px;
+object-fit: cover;
+border-radius: 5px;
+}
+
+.item div p,.item div span {
+font-size: 12px;
+}
+.ticket_text {
+margin: 0;
+border-radius: 0;
+}
+
+}

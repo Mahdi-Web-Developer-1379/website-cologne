@@ -1,0 +1,91 @@
+
+.stepper_bg {
+  background-color: #00422e;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 40px;
+  padding: 180px 60px 0 60px;
+  color: white;
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 18px;
+  padding-bottom: 3.8rem;
+  flex-wrap: wrap; 
+}
+
+.stepper p,
+.stepper a {
+  display: inline-block;
+  margin: 5px 0;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 1.2;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+  color: white;
+}
+
+.stepper a:hover {
+  opacity: 1;
+}
+
+.active_step {
+  opacity: 1 !important;
+  font-weight: 600;
+  color: #fff !important;
+}
+
+.stepper svg {
+  font-size: 1.2rem;
+  opacity: 0.7;
+  margin-top: 2px;
+}
+
+
+@media (max-width: 640px) {
+  .stepper_bg {
+    padding: 100px 20px 0 20px;
+    margin-bottom: 30px;
+  }
+
+  .stepper {
+    flex-direction: column-reverse; 
+    gap: 10px;
+    padding-bottom: 2rem;
+  }
+
+  .stepper svg {
+    transform: rotate(90deg); 
+    font-size: 1rem;
+  }
+
+  .stepper p,
+  .stepper a {
+    font-size: 16px;
+  }
+}
+
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .stepper_bg {
+    padding: 140px 30px 0 30px;
+  }
+
+  .stepper {
+    gap: 12px;
+  }
+
+  .stepper p,
+  .stepper a {
+    font-size: 18px;
+  }
+
+  .stepper svg {
+    font-size: 1.1rem;
+  }
+}

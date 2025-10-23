@@ -1,0 +1,7 @@
+@media (max-width: 480px) {
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

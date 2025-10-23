@@ -1,0 +1,212 @@
+.topbar {
+  width: 100%;
+  height: 70px;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  color: #fff;
+  border-bottom: 4px solid #00714f;
+}
+
+.profile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.profile div p {
+  margin: 0;
+}
+
+.profile span {
+  font-size: 14px;
+  color: rgb(144, 131, 131);
+}
+
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.topbar section {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+
+.searchBox {
+  position: relative;
+}
+
+.searchBox input {
+  width: 300px;
+  padding: 10px 10px 10px 40px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.searchBox div {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #00714f;
+  color: #fff;
+  height: 34px;
+  width: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+.notification {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 34px;
+  border-radius: 20%;
+  background-color: #00714f;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.notification span {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: #fff;
+  color: #00714f;
+  font-size: 9px;
+  padding: 1px 3px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+
+.notifications_box {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 300px;
+  background-color: #00714f;
+  border-radius: 8px;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+  color: #fff;
+}
+
+.notifications_box div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notifications_box button {
+  background-color: blue;
+  color: #fff;
+  padding: 0.5rem 0.7rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.notifications_box p,
+.notifications_box svg {
+  cursor: pointer;
+}
+
+
+.notifications_overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.39);
+  z-index: 99;
+}
+
+
+.modal_text {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+
+.searchBox svg,
+.notification svg {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .searchBox input {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .topbar section {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .searchBox input {
+    width: 150px;
+  }
+
+  .notifications_box {
+    left: auto;
+    right: 10px;
+    top: 60px;
+    width: 250px;
+  }
+
+  .profile img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .profile span {
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .searchBox input {
+    width: 120px;
+  }
+
+  .notifications_box {
+    width: 200px;
+  }
+}

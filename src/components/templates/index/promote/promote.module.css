@@ -1,0 +1,149 @@
+
+.readable {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+  flex-wrap: wrap; 
+}
+
+
+.main section {
+  flex: 1;
+  min-width: 280px;
+  font-family: shabnam, sans-serif;
+  color: #222;
+  text-align: right;
+}
+
+.main section span {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.main section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+
+.main img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+
+.club {
+  flex: 1;
+  min-height: 280px;
+  border-radius: 12px;
+  background-image: url("/images/eaude7.jpg");
+   background-color: rgba(0,0,0,0.4);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  color: white;
+  
+}
+
+.club span {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  display: block;
+  color: white;
+
+}
+
+.club p {
+  font-size: 1rem;
+  color: white;
+
+}
+
+
+.why_coffee {
+  flex: 1;
+  padding: 1rem;
+}
+
+.why_coffee .logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.why_coffee .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+
+
+
+.why_coffee .gray_btn {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.why_coffee .gray_btn:hover {
+  background-color: #ddd;
+}
+
+.red_btn {
+  background-color: rgb(211, 17, 17);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin-right: 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:  0.3s;
+}
+
+.red_btn:hover {
+  background-color: darkred;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .club {
+    width: 100%;
+    min-height: 200px;
+  }
+
+  .why_coffee {
+    text-align: center;
+  }
+}

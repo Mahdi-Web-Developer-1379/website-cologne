@@ -1,0 +1,185 @@
+
+
+  .card {
+    width: 100%;
+    direction: rtl;
+    position: relative;
+    padding-top: 10px;
+    color: black;
+    transition: transform 0.3s ease;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+    padding-top: 5px;
+    justify-content: center;
+  }
+  
+  .details svg {
+    color: orange;
+  }
+  
+  .details div {
+    direction: ltr;
+  }
+  
+  .details_container {
+    position: relative;
+    margin-top: 5px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .details_container img {
+    width: 100%;
+    height: 250px;
+    object-position: 100% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .details_container:hover img {
+    transform: scale(1.05);
+  }
+  
+  .card span {
+    color: rgb(52, 24, 14);
+    font-weight: 600;
+  }
+  
+  .details_container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .details_container:hover::before {
+    opacity: 1;
+  }
+  
+  .icons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: grid;
+    gap: 10px;
+    font-size: 2rem;
+    z-index: 3;
+    visibility: hidden;
+    color: white;
+  }
+  
+  .details_container:hover .icons {
+    visibility: visible;
+  }
+  
+  .icons svg {
+    cursor: pointer;
+  }
+  
+  .icons a,
+  .icons div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .tooltip {
+    font-size: 13px;
+    opacity: 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 0 8px;
+    white-space: nowrap;
+    border-radius: 4px;
+    line-height: 28px;
+    position: relative;
+  }
+  
+  .icons a:hover .tooltip,
+  .icons div:hover .tooltip {
+    opacity: 1;
+  }
+  
+  .details_container button {
+    cursor: pointer;
+    padding: 0.4rem 0.7rem;
+    bottom: 0;
+    transition: all 0.25s ease;
+    z-index: 3;
+    background: transparent;
+    left: 50%;
+    position: absolute;
+    visibility: hidden;
+    color: white;
+    width: max-content;
+    border: 1px solid white;
+    border-radius: 4px;
+    transform: translateX(-50%);
+  }
+  
+  .details_container:hover button {
+    visibility: visible;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+  }
+  
+
+  @media (max-width: 1024px) {
+    .details_container img {
+      height: 250px;
+    }
+  
+    .details_container:hover img {
+      transform: scale(1.03);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .card {
+      padding-top: 5px;
+    }
+  
+    .details_container img {
+      height: 200px;
+    }
+  
+    
+    .details_container:hover img,
+    .details_container:hover::before,
+    .details_container:hover button,
+    .details_container:hover .icons {
+      transform: none;
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    .icons {
+      top: 5px;
+      left: 5px;
+      font-size: 1.5rem;
+      gap: 5px;
+    }
+  
+    .tooltip {
+      font-size: 12px;
+      line-height: 24px;
+      padding: 0 6px;
+    }
+  
+    .details_container button {
+      padding: 0.3rem 0.6rem;
+      font-size: 14px;
+      bottom: 10px;
+      transform: translateX(-50%);
+    }
+  }
+  

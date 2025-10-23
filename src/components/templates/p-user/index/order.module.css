@@ -1,0 +1,55 @@
+.card {
+  width: 100%;
+  background: #00714f;
+  color: white;
+  padding: 1.7rem 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.userInfo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: row-reverse; 
+}
+
+.userInfo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.orderInfo {
+  text-align: right; 
+}
+
+.price {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 580px) {
+  .card {
+    flex-direction: column;
+  }
+  .orderInfo{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 420px) {
+  .card p{
+    font-size: 12px;
+  }
+  .userInfo img{
+    width: 25px;
+  height: 25px;
+  }
+}

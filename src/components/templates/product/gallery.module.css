@@ -1,0 +1,20 @@
+.sectionSwiper {
+    width: 36%
+}
+
+@media (max-width: 1024px) {
+    .sectionSwiper {
+        width: 40%
+    }
+}
+
+@media (max-width: 640px) {
+    .sectionSwiper {
+        width: 50%
+    }
+}
+@media (max-width: 480px) {
+    .sectionSwiper {
+        width: 100%
+    }
+}
